@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace Drupal\site_api_key\Routing;
 
@@ -14,8 +14,9 @@ class RouteSubscriber extends RouteSubscriberBase {
    * {@inheritdoc}
    */
   protected function alterRoutes(RouteCollection $collection) {
-    if ($route = $collection->get('system.site_information_settings')) 
+    if ($route = $collection->get('system.site_information_settings')) {
       $route->setDefault('_form', '\Drupal\site_api_key\Form\ExtendedSiteInformationForm');
+    }
   }
 
 }
