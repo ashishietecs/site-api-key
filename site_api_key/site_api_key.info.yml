@@ -1,0 +1,4 @@
+name: Site API Key
+description: 'This module allows you to set Site API key at Site information form. It will also provide URL ( http://localhost/page_json/{siteapikey}/{nid} ) that responds with a JSON representation of given node of only page type'
+type: module
+core: '8.x'
