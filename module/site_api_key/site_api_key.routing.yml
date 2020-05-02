@@ -1,9 +1,0 @@
-# Routing path of JSON response for a given node like http://localhost/page_json/{sitekey}/{nid} 
-site_api_key.json_api_page:
-  path: '/page_json/{sitekey}/{nodeid}'
-  defaults:
-    _controller: 'Drupal\site_api_key\Controller\JsonApiPageController::index'
-    _title: 'Page JSON api'
-  methods:  [GET]
-  requirements:
-    _custom_access: 'Drupal\site_api_key\Controller\JsonApiPageController::access'
